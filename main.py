@@ -6,8 +6,8 @@ from aiogram.types import *
 from aiogram import types
 from aiogram.dispatcher.filters import Text
 
-TOKEN = "6487232781:AAHCXZzKKjiWXUVMISHbQxo6J4OVwReIYzI"  # Токен бота
-admin_id = 665191842  # ИД админа (узнать можно в боте @username_to_id_bot )
+TOKEN = "example"  # Токен бота
+admin_id = 1111111  # ИД админа (узнать можно в боте @username_to_id_bot )
 
 boty = Bot(token=TOKEN)
 dp = Dispatcher(boty)
@@ -20,12 +20,12 @@ async def process_start_command(message: types.Message):
   buttons_row1 = ["🧐Предложения"]
   buttons_row2 = ["⚡️Крутки", "🎬Видео"]
   buttons_row3 = ["💫Поддержка"]
-  buttons_row4 = ["🎥Ссылки на меня"]  # New button added
+  buttons_row4 = ["🎥Ссылки на меня"]  
 
   keyboard.add(*buttons_row1)
   keyboard.add(*buttons_row2)
   keyboard.add(*buttons_row3)
-  keyboard.add(*buttons_row4)  # Adding the new row with the button
+  keyboard.add(*buttons_row4)  
 
   await message.answer(
       f"Привет {message['from'].first_name}👋!\n \nЯ - ЛОХБОТ❤️\nМой хозяин меня не уважает🥲\nНо я могу помочь вам в контакте по поводу всяких важных штуковин \n \nТыкай на кнопки ниже! 👇 \n \n \n Спасите...",
@@ -82,12 +82,12 @@ async def process_start_command(message: types.Message):
   buttons_row1 = ["🧐Предложения"]
   buttons_row2 = ["⚡️Крутки", "🎬Видео"]
   buttons_row3 = ["💫Поддержка"]
-  buttons_row4 = ["🎥Ссылки на меня"]  # New button added
+  buttons_row4 = ["🎥Ссылки на меня"]  
 
   keyboard.add(*buttons_row1)
   keyboard.add(*buttons_row2)
   keyboard.add(*buttons_row3)
-  keyboard.add(*buttons_row4)  # Adding the new row with the button
+  keyboard.add(*buttons_row4)  
 
   await message.answer(
       f"Привет {message['from'].first_name}👋!\n \nЯ - ЛОХБОТ❤️\nМой хозяин меня не уважает🥲\nНо я могу помочь вам в контакте по поводу всяких важных штуковин \n \nТыкай на кнопки ниже! 👇 \n \n \n Спасите...",
